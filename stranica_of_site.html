@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная страница</title>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        body {
+          background-color: #9dc2bd;
+        }
+    </style>
 </head>
 <body>
 <div class="row" style="height:100vh;">
@@ -12,7 +17,7 @@
         <div class="col" style="background: #696;">
             <div class="text" style="background: #269; width: 100%; height:100vh; ">
                 <img src="https://as2.ftcdn.net/v2/jpg/03/07/30/35/1000_F_307303515_NguNdLornf2LiB2q0wg6jKAHe5ele7mr.jpg"
-                     class="img-fluid" style="width: 30%; margin-right: 15px; margin-left:10px; margin-top:5px;">
+                     class="img-fluid" style="width: 20%; margin-right: 15px; margin-left:10px; margin-top:5px;">
                 <h3 class="text" style="color:#ffffff; margin-left:10px;">Меню</h3>
                 <hr style="color:#ffff">
                 <div style="margin-left:20px; margin-right:20px" align="left" class="text-left">
@@ -29,41 +34,72 @@
                     </button>
                     <br>
                 </div>
-                <hr style="margin-top:585px; color:#ffff">
+                <hr style="margin-top:555px; color:#ffff">
                 <div class="row">
                     <div class="col-6" style="margin-left:15px">
-
-                        <h6 style="color:#ffff">Пользователь</h6>
+                        <select class="form-select" style="width:170px; background: #2a4542; color: #ffffff; "
+                                aria-label="Default select example">
+                            <option selected>Пользователь</option>
+                            <option value="1">Профиль</option>
+                            <option value="2">Выйти</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-10">
-        <div class="row">
-            <div class="col-4">
-            </div>
-            <div class="col-4" style="background: #0b9c8b;">
-                <div class="card text-bg-secondary">
-                    <div class="card-body">
-                        <form>
-                            <h2>Оставьте заявку!</h2>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Имя">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="E-mail"
-                                       aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" placeholder="Сообщение" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Отправить</button>
-                        </form>
+        <div class="row text-center">
+            <h1 class="text-center" style="margin-top: 90px;">Главная</h1>
+            <h5 class="text-center" style="margin-top: 10px; color: #8e9493;">Вы находитесь на сайте, предназначенном
+                для продажи товаров.</h5>
+            <div class="row text-center">
+                <div class="col-4">
+                    <div class="card" style="margin-left:30%; width: 20rem; margin-top:20px;">
+                        <div class="card-body" style="background: #cbd6d5;">
+                            <h5 class="card-title text-center">План 1</h5>
+                            <hr>
+                            <h3 class="card-subtitle mb-2 text-body-secondary text-center" style="color: #8e9493;">$
+                                69.99</h3>
+                            <hr>
+                            <p class="card-text text-center">Поддержка до 3 пользователей, Место на диске 0.5 GB, Доступ к
+                                центру поддержки.</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary" style="background: #26a2eb; color: #000000;">Купить</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col align-self-center" style="background: #wdf;">
+                <div class="col-4">
+                    <div class="card" style="margin-left:20%; mx-auto; width: 20rem; margin-top:20px;">
+                        <div class="card-body" style="background: #cbd6d5;">
+                            <h5 class="card-title text-center">План 2</h5>
+                            <hr>
+                            <h3 class="card-subtitle mb-2 text-body-secondary text-center" style="color: #8e9493;">$
+                                159.99</h3>
+                            <hr style="width: 20">
+                            <p class="card-text text-center">Поддержка до 5 пользователей, Место на диске 2 GB, поддерживает
+                                E-mail, Доступ к центру поддержки.</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary" style="background: #26a2eb; color: #000000;">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card"
+                         style="margin-right:20%; margin-left:10%;; mx-auto; width: 20rem; margin-top:20px;">
+                        <div class="card-body" style="background: #cbd6d5;">
+                            <h5 class="card-title text-center">План 3</h5>
+                            <hr>
+                            <h3 class="card-subtitle mb-2 text-body-secondary text-center" style="color: #8e9493;">$
+                                299.99</h3>
+                            <hr>
+                            <p class="card-text text-center">Поддержка до 10 пользователей, Место на диске 16 GB, поддерживает
+                                E-mail, Доступ к центру поддержки.</p>
+                            <hr>
+                            <a href="#" class="btn btn-primary" style="background: #26a2eb; color: #000000;">Купить</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-2">
